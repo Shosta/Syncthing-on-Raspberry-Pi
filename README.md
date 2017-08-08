@@ -13,9 +13,13 @@ It is available on a lot of operating software which is very interesting for us.
 You can learn more about it at <a href="http://syncthing.net">syncthing.net</a>
 
 
+<!-- anchor -->
 
+#### Set up your Raspberry Pi
 
+@import "SetUpRaspberryPi.md";
 
+<!-- anchor -->
 
 <center>
 <br><br><br>
