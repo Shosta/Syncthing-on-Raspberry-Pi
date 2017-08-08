@@ -24,5 +24,6 @@ You can learn more about it at <a href="http://syncthing.net">syncthing.net</a>
 <center>
 <br><br><br>
 Released under the <a href="LICENSE.md">Rémi Lavedrine License</a><br>
-Copyright © 2017 Rémi Lavedrine
+Copyright © 2017 Rémi Lavedrine<br>
+Made with :heart: in Paris :fr:
 </center>
