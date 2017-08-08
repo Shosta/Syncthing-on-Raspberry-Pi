@@ -15,9 +15,39 @@ You can learn more about it at <a href="http://syncthing.net">syncthing.net</a>
 
 <!-- anchor -->
 
-#### Set up your Raspberry Pi
+### 1. Set up your Raspberry Pi
 
 @import "SetUpRaspberryPi.md";
+
+<!-- anchor -->
+
+<!-- anchor -->
+
+### 2. Connect your Raspberry Pi to Wifi 
+
+<!-- anchor -->
+
+<!-- anchor -->
+
+### 3. Secure your SSH connection 
+
+<!-- anchor -->
+
+<!-- anchor -->
+
+### 4. Automount your NAS or Hard Disk Drive 
+
+<!-- anchor -->
+
+<!-- anchor -->
+
+### 5. Backup your Disk Image 
+
+<!-- anchor -->
+
+<!-- anchor -->
+
+### 6. Install Synchting 
 
 <!-- anchor -->
 
@@ -25,5 +55,5 @@ You can learn more about it at <a href="http://syncthing.net">syncthing.net</a>
 <br><br><br>
 Released under the <a href="LICENSE.md">Rémi Lavedrine License</a><br>
 Copyright © 2017 Rémi Lavedrine<br>
-Made with :heart: in Paris :fr:
+Made with  :heart:  in Paris :fr:
 </center>
