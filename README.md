@@ -34,7 +34,7 @@ You can learn more about it at <a href="http://syncthing.net">syncthing.net</a>
 ### 4. Automount your NAS or Hard Disk Drive 
 
 <!-- anchor -->
-
+@import "AutomountHardDrives.md"
 <!-- anchor -->
 
 ### 5. Backup your Disk Image 
