@@ -1,0 +1,1 @@
+![Syncthing GUI](./InstallSyncthingImages/SyncthingGUI.png)
