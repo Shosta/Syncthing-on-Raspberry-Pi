@@ -10,13 +10,24 @@ It is available on a lot of operating software which is very interesting for us.
 
 You can learn more about it at <a href="http://syncthing.net">syncthing.net</a>
 
-
-<!-- anchor -->
-
 ### 1. Set up your Raspberry Pi
 
 <!-- anchor -->
-@import "SetUpRaspberryPi.md";
+Download Raspbian at the following location :
+[https://www.raspberrypi.org/downloads/raspbian/](https://www.raspberrypi.org/downloads/raspbian/)
+
+Burn the downloaded image to your microSD card.
+If you are on Linux or MacOS and if you are a command line person, you could use the dd command.
+
+You can find a perfect explanation of the process [here](https://www.raspberrypi.org/documentation/installation/installing-images/).
+
+Personnaly, I love [Etcher](https://etcher.io/) which is an application to burn images on SD cards.
+As Etcher is based on the Electron framework, it works perfectly on Linux, MacOS or Windows.
+
+![Etcher animation](/SetUpRaspberryPiImages/etcherScreenshot.gif)
+
+
+I highly recommend to download this program as you are going to use it a lot starting playing with the Raspberry Pi.
 <!-- anchor -->
 
 ### 2. Connect your Raspberry Pi to Wifi 
@@ -57,16 +68,6 @@ So you can access it on your network even if it has a dynamic IP address.
 This is one of the **most important** step.
 If you don't change the default Raspberry Pi password, you let it open to hackers as the default user and password is known and hackers made some script to look for Raspberry Pi on the network with the default user and password.
 
-######Create a new user :
-
-Add it to the Sudo group
-
-######Configure the SSH connection :
-
-
-
-######Limit the SSH connection to your new user :
-=======
 ##### Create a new user :
 
 Add it to the Sudo group
@@ -76,16 +77,11 @@ Add it to the Sudo group
 
 
 ##### Limit the SSH connection to your new user :
->>>>>>> Stashed changes
 We use sshd master configuration file to disable root login and this will may decrease and prevent the hacker from gaining root access to your Linux box. We also see how to enable root access again as well as how to limit ssh access based on users list.
 Disable SSH Root Login
 To disable root login, open the main ssh configuration file /etc/ssh/sshd_config with your choice of editor.
 
-<<<<<<< Updated upstream
-######Change the SSH default port : 
-=======
 ##### Change the SSH default port : 
->>>>>>> Stashed changes
 Limit SSH User Logins
 If you have large number of user accounts on the systems, then it makes sense that we limit remote access to those users who really need it. Open the `/etc/ssh/sshd_config file`.
 `sudo nano /etc/ssh/sshd_config`
@@ -118,8 +114,7 @@ Then open the file and delete the former key :
 
 `ctrl-X then Y`
 
-Then your ssh connection should be secure enough. 
-##### Change the SSH default port :
+Then your ssh connection should be secure enough.
 <!-- anchor -->
 
 ### 4. Automount your NAS or Hard Disk Drive 
