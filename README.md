@@ -1,5 +1,3 @@
-Developpement
-
 <center>
   <h2 style="border-bottom: none;"> Install Syncthing on a Raspberry Pi to create your own Dropbox. </h2>
 </center><br>
@@ -17,22 +15,20 @@ You can learn more about it at <a href="http://syncthing.net">syncthing.net</a>
 
 ### 1. Set up your Raspberry Pi
 
-@import "SetUpRaspberryPi.md";
-
 <!-- anchor -->
-
+@import "SetUpRaspberryPi.md";
 <!-- anchor -->
 
 ### 2. Connect your Raspberry Pi to Wifi 
 
 <!-- anchor -->
-
+@import "ConnectRaspberryPiToWifi.md"
 <!-- anchor -->
 
 ### 3. Secure your SSH connection 
 
 <!-- anchor -->
-
+@import "SecureYourRaspberryPi.md"
 <!-- anchor -->
 
 ### 4. Automount your NAS or Hard Disk Drive 
