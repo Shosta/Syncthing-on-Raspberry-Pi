@@ -54,7 +54,7 @@ Votre Raspberry Pi 3 est maintenant configuré pour se connecter à internet via
  Il ne vous reste plus qu’à démarrer le Wi-Fi de la Raspberry Pi avec cette commande :
 `ifconfig wlan0`
 
-#####Change the Raspberry Pi hostname :
+######Change the Raspberry Pi hostname :
 Type the following command in a Terminal:
 `sudo raspi-config`
 to change the Raspberry Pi hostname on your network.
@@ -65,26 +65,26 @@ So you can access it on your network even if it has a dynamic IP address.
 ### 3. Secure your SSH connection 
 
 <!-- anchor -->
-#####Change the pi default password :
+######Change the pi default password :
 `sudo passwd pi`
 
 This is one of the **most important** step.
 If you don't change the default Raspberry Pi password, you let it open to hackers as the default user and password is known and hackers made some script to look for Raspberry Pi on the network with the default user and password.
 
-#####Create a new user :
+######Create a new user :
 
 Add it to the Sudo group
 
-#####Configure the SSH connection :
+######Configure the SSH connection :
 
 
 
-#####Limit the SSH connection to your new user :
+######Limit the SSH connection to your new user :
 We use sshd master configuration file to disable root login and this will may decrease and prevent the hacker from gaining root access to your Linux box. We also see how to enable root access again as well as how to limit ssh access based on users list.
 Disable SSH Root Login
 To disable root login, open the main ssh configuration file /etc/ssh/sshd_config with your choice of editor.
 
-#####Change the SSH default port : 
+######Change the SSH default port : 
 Limit SSH User Logins
 If you have large number of user accounts on the systems, then it makes sense that we limit remote access to those users who really need it. Open the `/etc/ssh/sshd_config file`.
 `sudo nano /etc/ssh/sshd_config`
@@ -93,7 +93,7 @@ Add an AllowUsers line at the bottom of the file with a space separated by list 
 
 AllowUsers tecmint sheena
 
-#####Change the SSH default port :
+######Change the SSH default port :
 
 Change it from 22 (default for ssh) to a free one. 3321 should be ok.
 
@@ -132,17 +132,17 @@ I personnaly have a WD MyCloud NAS. It is the simplest and cheapest NAS device f
 It is a very good device. But it doesn't have all the possibilities of more expensive NAS devices.
 The Raspberry Pi is the perfect device to do bring a lot of excellent new features to it at the cheapest price.
 
-#####1. Configure the fstab file :
+######1. Configure the fstab file :
 First, backup your fstab file if you mess something configuring it :
 `sudo cp /etc/fstab /etc/fstab.bak`
 
-#####2. Create folder in the /mnt/ folder so that you can mount your network share in that folder
+######2. Create folder in the /mnt/ folder so that you can mount your network share in that folder
 `sudo mkdir WDMyCloudShares`
 `sudo nano /etc/fstab`
 
 At the end of the file add the following lines :
 >`//ShostaCloud/Remi/Vidéos/Films /home/remi/WDMyCloudShares/Videos cifs user=yourLogin,password=yourPassword,uid=remi,gid=remi,x-systemd.automount 0 0`
-#####TODO: Add a screenshot with the fstab properly modified.
+######TODO: Add a screenshot with the fstab properly modified.
 
 Reboot to verify that it works properly :
 `sudo reboot`
@@ -157,13 +157,13 @@ Wait for the reboot, then check the mounted volumes :
 Now that you configured your Raspberry Pi, it is wise to backup your configuration in case something got wrong in the later configuration.
 So you don't need to redo everything from the beginning.
 
-#####1. Shutdown your Raspberry Pi :
+######1. Shutdown your Raspberry Pi :
 
 `sudo shutdown`
 
 Get the SD Card out of the Pi and put it back to your Mac/Linux/Windows PC
 
-#####2. Backup the Raspberry Pi image to your computer : 
+######2. Backup the Raspberry Pi image to your computer : 
 
 On Mac type : 
 `sudo dd if=/dev/rdisk1 of=/path/to/backup.img bs=1m`
