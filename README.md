@@ -40,7 +40,7 @@ You can learn more about it at <a href="http://syncthing.net">syncthing.net</a>
 ### 5. Backup your Disk Image 
 
 <!-- anchor -->
-
+@import "BackUpDiskImage.md"
 <!-- anchor -->
 
 ### 6. Install Synchting 
